@@ -1,3 +1,127 @@
-<h1>HivePin</h1>
-<p>A smart location-locked note and team management application.</p>
-<a href="privacy.html">Privacy Policy</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HivePin - Team & Location-Based Management</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #f9f9f9;
+        }
+        header {
+            text-align: center;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #e1e1e1;
+        }
+        .app-logo {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        h1 {
+            margin: 0;
+            color: #111;
+        }
+        .tagline {
+            font-size: 1.2rem;
+            color: #666;
+            font-style: italic;
+        }
+        section {
+            margin: 40px 0;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: #222;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 8px;
+            margin-top: 0;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .highlight-box {
+            background-color: #f0f7ff;
+            border-left: 4px solid #007aff;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 4px 4px 0;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #e1e1e1;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        footer a {
+            color: #007aff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="app-logo">📍🐝</div>
+        <h1>HivePin</h1>
+        <p class="tagline">Smart location-locked notes and seamless team coordination.</p>
+    </header>
+
+    <main>
+        <!-- 1. ACCURATELY IDENTIFY APP & FUNCTIONALITY -->
+        <section id="features">
+            <h2>About HivePin</h2>
+            <p>HivePin is a native mobile application designed to simplify real-time team collaboration and spatial note-keeping. Built for teams that move fast, HivePin allows organizers and members to anchor persistent data directly to real-world coordinates.</p>
+            <ul>
+                <li><strong>Team Hub Management:</strong> Organize, view, and decode real-time group allocations. Create team parameters and link team owners seamlessly.</li>
+                <li><strong>Spatial Data Pinning:</strong> Securely anchor tasks, alerts, or details to distinct geo-locations for context-aware workflows.</li>
+                <li><strong>Instant Team Sync:</strong> Experience zero-latency data updates when managing group rosters or regional objectives.</li>
+            </ul>
+        </section>
+
+        <!-- 2. TRANSPARENT DATA EXPLANATION (CRITICAL FOR GOOGLE) -->
+        <section id="data-transparency">
+            <h2>Google OAuth Data Transparency & Usage</h2>
+            <p>HivePin utilizes Google Sign-In to provide a secure, frictionless identity verification process for our users. We respect your privacy and enforce absolute transparency regarding data access:</p>
+            
+            <div class="highlight-box">
+                <strong>What Scopes We Request & Why:</strong>
+                <ul>
+                    <li><code>.../auth/userinfo.email</code>: Used uniquely to establish your login identity, tie your user profile to your specific organizational teams, and query relevant team ownership records.</li>
+                    <li><code>.../auth/userinfo.profile</code>: Used strictly to retrieve your display name and basic avatar thumbnail to cleanly identify you to fellow team members within your collaborative spaces.</li>
+                </ul>
+            </div>
+
+            <p><strong>Data Processing Compliance:</strong> HivePin does not request, access, or interact with sensitive or restricted user directories (such as Google Drive files, Calendar entries, or Gmail mailboxes). HivePin's use and transfer of information received from Google APIs to any other app will adhere to the <a href="https://developers.google.com/identity/protocols/oauth2/policies" target="_blank" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+        </section>
+    </main>
+
+    <!-- 3. MANDATORY LINKS VISIBLE WITHOUT LOGGING IN -->
+    <footer>
+        <p>&copy; 2026 Beez Solutions. All rights reserved.</p>
+        <p>
+            <a href="privacy.html">Privacy Policy</a> | 
+            <a href="mailto:support@yourdomain.com">Contact Support</a>
+        </p>
+    </footer>
+
+</body>
+</html>
